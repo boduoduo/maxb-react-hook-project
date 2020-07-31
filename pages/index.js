@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import { Row, Col, List, Icon } from 'antd'
 import '../static/style/pages/index.css'
+import Author from '../components/Author'
 
 export default function Home() {
   const [mylist, setMylist] = useState(
@@ -36,12 +37,12 @@ export default function Home() {
                   <span><Icon type="fire" />92903人</span>
                 </div>
                 <div className="list-context">{item.context}</div>
-              </List.Item>
+              </List.Item> 
             )}
           />
         </Col>
         <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
-          Right
+          <Author/>
         </Col>
       </Row>
     </div>
